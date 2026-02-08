@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You 💛</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffffff);
+      text-align: center;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h1 {
+      color: #ff477e;
+      font-size: 40px;
+    }
+
+    h2 {
+      color: #ff5c8a;
+    }
+
+    .card {
+      background: white;
+      margin: 25px auto;
+      padding: 25px;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    button {
+      background: #ff5c8a;
+      color: white;
+      border: none;
+      padding: 14px 25px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    img {
+      width: 180px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    footer {
+      background: #ffccd5;
+      padding: 40px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 🌟 INTRO -->
+<section>
+  <h1>Hey You 💛</h1>
+
+  <div class="card">
+    <p>
+      I made this little website just for you.  
+      Scroll slowly… every part comes from my heart.
+    </p>
+  </div>
+
+  <button onclick="alert('You already made my day better just by opening this 😊')">
+    Start Here →
+  </button>
+</section>
+
+<!-- 💖 WHY YOU MATTER -->
+<section>
+  <h2>Why You Mean So Much To Me</h2>
+
+  <div class="card">
+    <p>✨ You listen.</p>
+    <p>✨ You try.</p>
+    <p>✨ You respect feelings.</p>
+    <p>✨ You make days lighter.</p>
+    <p>✨ You genuinely care.</p>
+  </div>
+</section>
+
+<!-- 📸 PHOTO GALLERY -->
+<section>
+  <h2>My Favourite Human 📸</h2>
+
+  <div class="card">
+    <p>
+      Add photos in the same folder as this file and name them:  
+      <b>photo1.jpg, photo2.jpg, photo3.jpg</b>
+    </p>
+
+    <div class="gallery">
+      <img src="photo1.jpg">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- 😎 HOW COOL HE IS -->
+<section>
+  <h2>How Cool You Are 😎</h2>
+
+  <div class="card">
+    <p>✔ Smart</p>
+    <p>✔ Kind</p>
+    <p>✔ Strong</p>
+    <p>✔ Funny</p>
+    <p>✔ Loyal</p>
+    <p>✔ One of a kind</p>
+  </div>
+</section>
+
+<!-- 🎉 FUN BUTTON -->
+<section>
+  <h2>Press This 😌</h2>
+
+  <div class="card">
+    <button onclick="showLove()">
+      Click for a surprise 💛
+    </button>
+
+    <p id="surprise" style="font-size:20px;"></p>
+  </div>
+</section>
+
+<!-- 💬 FINAL MESSAGE -->
+<section>
+  <h2>One Last Thing…</h2>
+
+  <div class="card">
+    <p>
+      I really appreciate you.  
+      I admire the way you try.  
+      I’m grateful for you.  
+      And I care about you — a lot.
+    </p>
+  </div>
+</section>
+
+<footer>
+  Made with 💛 just for you.
+</footer>
+
+<script>
+  const messages = [
+    "You make my world calmer 💛",
+    "You matter to me a lot.",
+    "I believe in you.",
+    "You make ordinary days special.",
+    "I'm really glad you're in my life.",
+    "You are appreciated more than you know."
+  ];
+
+  function showLove() {
+    const random = Math.floor(Math.random() * messages.length);
+    document.getElementById("surprise").innerText = messages[random];
+  }
+</script>
+
+</body>
+</html>
